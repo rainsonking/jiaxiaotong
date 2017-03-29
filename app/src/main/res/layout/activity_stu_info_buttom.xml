@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_expansion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:paddingBottom="@dimen/text_size_10"
+        android:paddingTop="@dimen/text_size_10">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/iv_on_off"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/iv_on_off"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_course_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="#ff981f"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layout"
+            android:layout_marginTop="@dimen/text_size_10"
+            android:background="#d9d9d9" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/layout"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="@dimen/text_size_10"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_10"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_buy_hour"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="购买课时:"
+                    android:textColor="#858585"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_buy_hour_value"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_buy_hour"
+                    android:text=""
+                    android:textColor="#ff981f"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_learn_hour"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_buy_hour"
+                    android:text="已学课时:"
+                    android:textColor="#858585"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_learn_hour_value"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_learn_hour"
+                    android:layout_toRightOf="@+id/tv_learn_hour"
+                    android:text=""
+                    android:textColor="#ff981f"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_10"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_bushi_hour"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="补时课时:"
+                    android:textColor="#858585"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_bushi_value"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_bushi_hour"
+                    android:text=""
+                    android:textColor="#ff981f"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_shengyu_hour"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_bushi_hour"
+                    android:text="剩余课时:"
+                    android:textColor="#858585"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_shengyu_value"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_shengyu_hour"
+                    android:layout_toRightOf="@+id/tv_shengyu_hour"
+                    android:text=""
+                    android:textColor="#ff981f"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_expansion_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layout"
+            android:background="#d9d9d9" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/text_size_10"
+            android:paddingLeft="17dp"
+            android:paddingRight="15dp"
+            android:paddingTop="@dimen/text_size_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="初始成绩"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_start_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="#4CA5FF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layout"
+            android:layout_marginLeft="@dimen/text_size_17"
+            android:layout_marginRight="@dimen/text_size_17"
+            android:background="#d9d9d9" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/text_size_10"
+            android:paddingLeft="17dp"
+            android:paddingRight="15dp"
+            android:paddingTop="@dimen/text_size_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="模考成绩"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_mokao_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="#4CA5FF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layout"
+            android:layout_marginLeft="@dimen/text_size_17"
+            android:layout_marginRight="@dimen/text_size_17"
+            android:background="#d9d9d9" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/text_size_10"
+            android:paddingLeft="17dp"
+            android:paddingRight="15dp"
+            android:paddingTop="@dimen/text_size_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="目标成绩"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_end_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="#4CA5FF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layout"
+            android:layout_marginLeft="@dimen/text_size_17"
+            android:layout_marginRight="@dimen/text_size_17"
+            android:background="#d9d9d9" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/text_size_10"
+            android:paddingLeft="17dp"
+            android:paddingRight="15dp"
+            android:paddingTop="@dimen/text_size_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="考试日期"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_test_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="#4CA5FF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

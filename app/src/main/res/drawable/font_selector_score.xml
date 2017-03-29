@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--   选中时的图片背景
+     -->
+    <item android:state_checked="true" android:color="@color/font_selector_score"/>
+    <!--   单击时的背景图片
+     -->
+    <!--<item android:state_pressed="true" android:color="@color/font_selector_score"/>-->
+    <!--&lt;!&ndash;   默认时的背景图片-->
+     <!--&ndash;&gt;-->
+    <!--<item android:color="@color/score_night"/>-->
+    <item android:state_checked="false" android:color="@color/score_night"/>
+</selector>

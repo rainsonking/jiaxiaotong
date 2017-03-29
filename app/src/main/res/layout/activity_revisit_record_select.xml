@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="15dp"
+        android:text="回访阶段"
+        android:textColor="@color/score_night"
+        android:textSize="@dimen/text_size_15" />
+    <!--<RadioGroup-->
+    <!--android:id="@+id/rg1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:orientation="horizontal">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/sel_radio_group_selector"
+            android:button="@null"
+            android:text="初次回访"
+            android:textColor="@color/color_selector" />
+
+        <CheckBox
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:layout_marginLeft="15dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/sel_radio_group_selector"
+            android:button="@null"
+            android:text="每日回访"
+            android:textColor="@color/color_selector" />
+
+        <CheckBox
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:layout_marginLeft="15dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/sel_radio_group_selector"
+            android:button="@null"
+            android:text="阶段回访"
+            android:textColor="@color/color_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/sel_radio_group_selector"
+            android:button="@null"
+            android:text="头脑风暴"
+            android:textColor="@color/color_selector" />
+
+        <CheckBox
+            android:id="@+id/rb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:layout_marginLeft="15dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/sel_radio_group_selector"
+            android:button="@null"
+            android:text="转老师回访"
+            android:textColor="@color/color_selector" />
+
+        <CheckBox
+            android:id="@+id/rb6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:layout_marginLeft="15dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/sel_radio_group_selector"
+            android:button="@null"
+            android:text="久未上课回访"
+            android:textColor="@color/color_selector" />
+        <!--</RadioGroup>-->
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/score_night"
+        android:textSize="@dimen/text_size_15"
+        android:text="回访结果" />
+
+    <LinearLayout
+        android:id="@+id/rg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/satisfy"
+            android:layout_width="100dp"
+            android:layout_height="31dp"
+            android:background="@drawable/sel_radio_group_selector_sec"
+            android:button="@null"
+          />
+        <CheckBox
+            android:id="@+id/unsatisfy"
+            android:layout_width="100dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/sel_radio_group_selector_third"
+            android:button="@null" />
+        <!--<RadioButton-->
+            <!--android:id="@+id/satisfy"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:background="@drawable/sel_radio_group_selector"-->
+            <!--android:button="@null"-->
+            <!--android:text="满意"-->
+            <!--android:textColor="@color/color_selector" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/unsatisfy"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:background="@drawable/sel_radio_group_selector"-->
+            <!--android:button="@null"-->
+            <!--android:text="不满意"-->
+            <!--android:textColor="@color/color_selector" />-->
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/btn_submit"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:background="#d7000f"
+    android:gravity="center"
+    android:layout_marginTop="36dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d7000f"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:text="确认" />
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/activity_bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:background="#ffffff"
+        android:layout_marginTop="@dimen/text_size_8"
+        android:paddingBottom="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/text_size_15"
+            android:src="@mipmap/course_package_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="托福一对一"
+            android:textColor="#333333"
+            android:textSize="17sp"
+            android:layout_marginTop="@dimen/text_size_19"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_marginLeft="@dimen/text_size_12"
+            />
+
+        <ImageView
+            android:id="@+id/iv_teacher"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@mipmap/iv_filter"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_below="@+id/tv_course_name"
+            android:layout_marginLeft="@dimen/text_size_12"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王小花"
+            android:textColor="#333333"
+            android:textSize="17sp"
+            android:layout_toRightOf="@+id/iv_teacher"
+            android:layout_below="@+id/tv_course_name"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="17dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_xiaoqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中关村校区"
+            android:layout_marginRight="@dimen/text_size_17"
+            android:layout_marginTop="@dimen/text_size_19"
+            android:textSize="17sp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/text_size_8"
+        >
+        <RelativeLayout
+            android:id="@+id/layout_stage_plan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_selector"
+            >
+
+            <ImageView
+                android:id="@+id/iv_stage_plan"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/img_stage_summary_b"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/iv_stage_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阶段计划"
+                android:layout_centerVertical="true"
+                android:textColor="#333333"
+                android:layout_marginLeft="14dp"
+                android:textSize="17sp"
+                android:layout_marginRight="@dimen/text_size_10"
+                />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/img_next_page"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/score_19"
+            android:layout_marginLeft="@dimen/text_size_15"
+            android:layout_marginRight="@dimen/text_size_15"
+            />
+
+        <RelativeLayout
+            android:id="@+id/layout_stage_final_report"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_selector"
+            >
+
+            <ImageView
+                android:id="@+id/iv_stage_zj_report"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/img_stage_summary_a"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/iv_stage_zj_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阶段总结报告"
+                android:textColor="#333333"
+                android:layout_marginLeft="15dp"
+                android:textSize="17sp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/text_size_10"
+                />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/img_next_page"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/text_size_8"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的课程记录"
+            android:textSize="17sp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/text_size_10"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

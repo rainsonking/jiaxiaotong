@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            >
+
+            <TextView
+                android:id="@+id/test_score_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学员模考成绩"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/test_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_15" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/text_size_15"
+            android:layout_marginRight="@dimen/text_size_15"
+            android:background="@color/score_19"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="模考反馈"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_15" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginLeft="@dimen/text_size_15"-->
+            <!--android:background="@color/score_18"/>-->
+
+        <TextView
+            android:id="@+id/test_feedback"
+            android:textSize="@dimen/text_size_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#858585"
+            android:layout_marginBottom="@dimen/text_size_16"
+            android:layout_marginLeft="@dimen/text_size_15"
+            android:layout_marginRight="@dimen/text_size_15"
+            android:text="模考反馈模考反馈模考反馈模考反馈模考反馈模考反馈模考反馈模考反馈模考反馈模考反馈模考反馈模考反馈模考反馈模考反馈模考反馈模考反馈模考反馈"
+            />
+    </LinearLayout>
+
+</LinearLayout>

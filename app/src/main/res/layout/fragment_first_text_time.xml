@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/font_selector_score"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/score_18" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:background="@color/font_selector_score"
+       android:gravity="center"
+        android:textColor="@color/white"
+        android:text="dsdfd"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/first_swipe_ref_ll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <ListView
+            android:id="@+id/first_text_time_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:paddingTop="24dp">
+
+        </ListView>
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</LinearLayout>

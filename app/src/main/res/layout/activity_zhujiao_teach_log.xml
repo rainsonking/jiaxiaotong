@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_normal"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="@dimen/text_size_10"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="督导次数"
+            android:textColor="@color/score_12"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_dudao_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6-20"
+            android:textColor="@color/score_night"
+            android:textSize="@dimen/text_size_15"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginLeft="10dp"
+    android:background="@color/bg_normal"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/text_size_10"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="督导内容"
+            android:textColor="@color/score_12"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_dudao_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单词抽查"
+            android:textColor="@color/score_night"
+            android:textSize="@dimen/text_size_15"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/text_size_10"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="@dimen/text_size_10"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否按计划督导"
+            android:textColor="@color/score_12"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_is_on_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/score_night"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/bg_normal"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/text_size_10"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本次督导成绩"
+            android:textColor="@color/score_12"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_dudao_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/score_night"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/bg_normal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_size_10"
+        android:orientation="vertical"
+        android:background="#ffffff"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="督导反馈"
+            android:textColor="@color/score_12"
+            android:layout_marginBottom="@dimen/text_size_10"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_dudao_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="背单词"
+            android:textColor="@color/score_night"
+            android:textSize="@dimen/text_size_15"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.bailyhome.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:gravity="center_vertical"
+
+            >
+            <!--android:paddingTop="3dp"-->
+            <!--android:paddingBottom="3dp"-->
+            <!---->
+            <RadioGroup
+                android:id="@+id/book_radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/radiogroup_bg"
+                android:padding="1dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_un_get"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:checked="true"
+                    android:button="@null"
+                    android:gravity="center_horizontal"
+                    android:textColor="@drawable/font_un_get_selector"
+                    android:background="@drawable/un_get_bg_selector"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="@dimen/text_size_13"
+                    android:paddingRight="@dimen/text_size_13"
+                    android:text="课程表" />
+
+                <RadioButton
+                    android:id="@+id/rb_get"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:button="@null"
+                    android:gravity="center_horizontal"
+                    android:textColor="@drawable/font_un_get_selector"
+                    android:background="@drawable/get_bg_selector"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="@dimen/text_size_13"
+                    android:paddingRight="@dimen/text_size_13"
+                    android:text="课程包" />
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/toolbar_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学习"
+                    android:textColor="#d7000f"
+                    android:textSize="@dimen/text_size_20"
+                    android:visibility="gone"
+                    />
+
+                <!--<com.example.bailyhome.view.ExpandTabView-->
+                    <!--android:id="@+id/expandtab_view"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#0066ff"-->
+                    <!--android:text="学习"-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textSize="@dimen/text_size_12"-->
+                    <!--android:visibility="gone">-->
+
+                <!--</com.example.bailyhome.view.ExpandTabView>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="课程名称"
+                    android:textSize="@dimen/text_size_20"
+                    android:textColor="#d7000f"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_on_off"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@mipmap/img_top"
+                    />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom|end"-->
+    <!--android:layout_margin="@dimen/fab_margin"-->
+    <!--android:src="@android:drawable/ic_dialog_email" />-->
+
+</android.support.design.widget.CoordinatorLayout>

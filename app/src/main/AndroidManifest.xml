@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bailyhome">
+    <!-- 必选-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />  <!-- 获取设备信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取MAC地址-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 读写sdcard，storage等等 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 允许程序录制音频 -->
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LogoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyNewTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".StagePlanActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".FirstTextActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".HworkGradeActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".ClassWorkActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".StateTestActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".TeachLogActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".MoreItemFirstActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".StageSumReportActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".StuinfoActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".LeaveRecActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".LeaveRecInfoActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".ReVisitRecActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".ReVisitRecInfoActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".ResetPwdActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".CoursePackageDetail"
+            android:exported="true"
+            android:screenOrientation="portrait"
+             />
+        <!--<activity-->
+        <!--android:name=".StagePlanActivity"-->
+        <!-- />-->
+        <activity
+            android:name=".CourseInfoActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".ClassRecordActivity"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+        <activity
+            android:name=".CouseSumReportActivity"
+            android:screenOrientation="portrait"
+             />
+
+        <activity
+            android:name=".CoursePingjiaActivity"
+            android:screenOrientation="portrait"
+             />
+
+        <activity
+            android:name=".FujianActivity"
+            android:screenOrientation="portrait"
+             />
+
+        <activity
+            android:name=".CourseOrder"
+            android:screenOrientation="portrait"
+             />
+
+        <activity
+            android:name=".ZhujiaoYiPeixun"
+            android:screenOrientation="portrait"
+             />
+
+        <activity
+            android:name=".MokaoJiangjie"
+            android:screenOrientation="portrait"
+             />
+
+        <activity
+            android:name=".ClassWorkActivity2"
+            android:screenOrientation="portrait"
+             />
+
+        <activity
+            android:name=".ZhujiaoTeachLogActivity"
+            android:screenOrientation="portrait"
+             />
+
+        <activity
+            android:name=".CoursePingjiaActivity2"
+            android:screenOrientation="portrait"
+             />
+
+        <activity
+            android:name=".CourseTableLeaveActivity"
+            android:screenOrientation="portrait"
+             />
+
+        <activity
+            android:name=".MokaoActivity"
+            android:screenOrientation="portrait"
+             />
+
+        <activity
+            android:name=".MoKaoDetailActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".TestScanActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="b9204811afa2bc707abf7ebd469c5876" >
+        </meta-data>
+    </application>
+
+</manifest>

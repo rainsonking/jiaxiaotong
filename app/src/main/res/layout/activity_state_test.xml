@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/score_18"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="课程"
+                android:textColor="@color/score_12"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/courseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="托福一对一"
+                android:textColor="@color/score_night"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="11sp"
+            android:layout_marginRight="11sp"
+            android:background="@color/score_19" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="教师"
+                android:textColor="@color/score_12"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张大力"
+                android:textColor="@color/score_night"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="11sp"
+            android:layout_marginRight="11sp"
+            android:background="@color/score_19" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44sp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="发布时间"
+                android:textColor="@color/score_12"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/publish_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-03-15"
+                android:textColor="@color/score_night"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="11sp"
+            android:layout_marginRight="11sp"
+            android:background="@color/score_19" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="上交时间"
+                android:textColor="@color/score_12"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/work_finish_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="2016-03-15"
+                android:textColor="@color/score_night"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="11sp"
+            android:layout_marginRight="11sp"
+            android:background="@color/score_19" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="批改时间"
+                android:textColor="@color/score_12"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/correct_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="2016-03-15"
+                android:textColor="@color/score_night"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="11sp"
+            android:layout_marginRight="11sp"
+            android:background="@color/score_19" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="测评分数"
+                android:textColor="@color/score_12"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/test_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="90"
+                android:textColor="@color/score_night"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_header" />
+
+    <LinearLayout
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!--style="@style/course_review_radio1"-->
+        <LinearLayout
+            android:id="@+id/ll_layout_01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="时间轴"
+                android:textColor="@color/font_selector_score"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/tv_text_01"
+                android:layout_width="57dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tv_radiobtn_score" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/score_16" />
+        <!--style="@style/course_review_radio2"-->
+        <LinearLayout
+            android:id="@+id/ll_layout_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="图表"
+                android:textColor="@color/score_night"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/tv_text_02"
+                android:layout_width="57dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tv_radiobtn_score"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>
